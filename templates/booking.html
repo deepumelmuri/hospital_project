@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}
+Booking
+{%endblock%}
+{%block content%}
+<h1 class="text-center">Make an Appointment</h1><br>
+<form action="" method="POST" style="margin-left: 500px;" ><br>
+    {% csrf_token %}
+    {{form.as_p}}<br>
+    <button type="submit" class="btn btn-outline-dark" style="margin-left: 70px;">Submit</button>
+    
+</form>
+
+{% endblock %}
